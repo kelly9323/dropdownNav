@@ -1,0 +1,69 @@
+:root {
+  font-size: 30px;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.main-header {
+}
+.main-header__nav {
+}
+.main-header__list {
+  font-size: 0;
+  text-align: center;
+}
+.main-header__item {
+  display: inline-block;
+}
+.main-header__item,
+.main-header__item__subitem,
+.main-header__item__sub-subitem {
+  position: relative;
+  border: 1px solid #555;
+  background-color: teal;
+  color: azure;
+  font-size: 1rem;
+}
+.main-header__item:hover,
+.main-header__item__subitem:hover,
+.main-header__item__sub-subitem:hover {
+  background-color: rgb(0, 72, 72);
+}
+.main-header__link {
+  display: inline-block;
+  padding: 0.5em 1em;
+}
+.main-header__list__sublist {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.main-header__item:hover > .main-header__list__sublist {
+  display: block;
+}
+.main-header__item__subitem:hover > .main-header__list__sublist {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 100px;
+}
+
+.main-header__list__sub-sublist {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+.main-header__list__sublist > li:hover > .main-header__list__sub-sublist {
+  display: block;
+}
